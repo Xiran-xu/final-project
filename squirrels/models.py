@@ -1,3 +1,5 @@
 from django.db import models
 
-# Create your models here.
+class Sighting(models.Model):
+    UniqueSquirrelID = models.CharField(max_length=100)
+    Date=models.CharField(max_length=100)
